@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_clone/screens/stories/storypage.dart';
 
 class StatusScreen extends StatefulWidget {
   @override
@@ -81,7 +82,10 @@ class _StatusScreenState extends State<StatusScreen> {
                   subtitle: Text(
                     '3 hours ago',
                   ),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Stories()));
+                  },
                 )
               ],
             ),
